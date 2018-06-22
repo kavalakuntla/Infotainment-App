@@ -1,0 +1,3 @@
+# Infotainment-App
+
+It is an AngularJS application which provides both Information and Entertainment. A user can search for the desired information. wiki API is used to fetch the detailed information of the keyword. Various links are displayed to the user, which redirects to wikipedia. Additionally, a user can search for movies and songs. OMDb and Last.fm API’s are used to get the data of movies and songs respectively. AngularJS http service is used to read the data from API’s. ngRoute module in AngularJS is used in order to make the website a Single Page Application (SPA). AngularJS Custom Directives are created to reuse the code in different html pages.
