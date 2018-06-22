@@ -1,0 +1,32 @@
+body {
+ 
+}
+
+#wiki {
+  background-color: #0099cc;
+  border-radius: 25px;
+  margin-bottom: 25px;
+  height: 200px;
+}
+
+
+#top {
+  background-image: url("http://i1.wp.com/static.web-backgrounds.net/uploads/2012/08/City_Landscape_Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Lobster";
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  
+}
+
+.content {
+  height: 150px;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.row {
+  margin: 0 90px;
+}
