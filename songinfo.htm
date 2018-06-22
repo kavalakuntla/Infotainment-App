@@ -1,0 +1,20 @@
+<div ng-controller="songsCtrl" class="jumbotron">
+    <div class="row" style="height: 550px">
+	  	<div class="col-md-4">
+	  		<img style=""src="{{ song.album.image[3]['#text'] }}">
+	  	</div>
+	    <div class="col-md-8" >
+	        <h2>{{ song.name }}</h2>
+	        <ul class="list-group">
+		        <li class="list-group-item"><strong>Album:</strong> {{song.album.title}}</li>
+		        <li class="list-group-item"><strong>Artist:</strong> {{song.artist.name}}</li>
+		        <li class="list-group-item"><strong>Play count:</strong> {{song.playcount}}</li>
+		
+	        </ul>
+	    </div>
+    </div>
+    <div class="row">
+    </div>
+</div>
+
+       

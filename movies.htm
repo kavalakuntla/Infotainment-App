@@ -1,0 +1,30 @@
+<div ng-controller="moviesCtrl">
+  <div id="top">
+   <h1 class="text-left" style="padding: 20px 20px">MoviesApp</h1> 
+    <a ng-href="{{ randomLink }}" target="blank">
+      <img id="wiki" src=https://www.logodesignteam.com/images/portfolio-images/motion-pictures-film-logo-design/motion-pictures-film-logo-design8.jpg alt=""></a>
+    <div class="row">
+      <div class="col-md-10">
+        <input type="text" class="form-control" ng-model="searchTerm" placeholder="Search for Movies"> </div>
+        <div class="col-md-2">
+          <a type="button" id="search" ng-click="searchMovies()"class="btn btn-lg btn-danger">Search</a>
+        </div>
+    </div>
+    </div>
+    <div class="row">
+      <span class="col-md-4" ng-repeat="movie in moviesArray[0]">
+        <div class="card" style="width: 18rem; margin-bottom: 50px">
+            <img  ng-if="movie.Poster!=='N/A'" class="card-img-top" style="height: 300px;"src="{{ movie.Poster }}">
+            <img ng-if="movie.Poster==='N/A'" class="card-img-top" style="height: 300px;"src="https://cdn20.patchcdn.com/users/22924509/20180417/024653/styles/T800x600/public/processed_images/jag_cz_movie_theater_retro_shutterstock_594132752-1523990060-9711.jpg">
+            <div class="card-body" style="background-color: #f1f1f1;">
+              <h5 class="card-title">{{ movie.Title }}</h5>
+            </div>
+            <div>
+              <a href="#!movie-info" class="btn btn-primary btn-block" 
+                 ng-click="movieInfo(movie.imdbID)" style="background-color: black; color: white">Movie Details
+               </a>
+            </div>
+        </div>
+      </span>
+    </div>
+  </div>

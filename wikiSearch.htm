@@ -1,0 +1,26 @@
+<div ng-controller="wikiCtrl">
+  <div id="top">
+    <h1 class="text-left" style="padding: 20px 20px">WikiApp</h1> 
+    <a ng-href="{{ randomLink }}" target="blank">
+      <img id="wiki" src="https://www.logodesignteam.com/images/portfolio-images/motion-pictures-film-logo-design/motion-pictures-film-logo-design8.jpg" alt=""></a>
+    <div class="row">
+      <div class="col-md-10">
+        <input type="text" class="form-control" ng-model="searchTerm" placeholder="Search Wikipedia here"> </div>
+        <div class="col-md-2">
+          <a id="search" ng-click="searchWiki()"class="btn btn-lg btn-danger">Search</a>
+        </div>
+    </div>
+  </div>
+  <div>
+    <span ng-repeat="info in searchTermArr[0]">
+    <div class="content text-center"ng-if="$odd" style="background-color:#f1f1f1">
+      <a ng-href="{{ searchTermArr[2][$index] }}"> <h3> {{$index + 1}}. {{ info }} </h3> </a>
+      <p>{{ searchTermArr[1][$index] }} </p> 
+      </div>
+      <div class="content text-center"ng-if="$even">
+      <a ng-href="{{ searchTermArr[2][$index] }}"> <h3> {{$index + 1}}. {{ info }} </h3> </a>
+      <p>{{ searchTermArr[1][$index] }} </p> 
+      </div>
+    </span>
+    </div>
+</div>
